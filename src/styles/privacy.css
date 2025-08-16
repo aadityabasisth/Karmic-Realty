@@ -1,0 +1,246 @@
+/* Karmic Realty Privacy Policy - Completely renamed classes to avoid conflicts */
+.kr-privacy-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  color: #333333;
+}
+
+/* Top CTA Bar styles - using kr- prefix */
+.kr-privacy-container .kr-top-cta-bar {
+  background-color: #000000;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.kr-privacy-container .kr-cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.kr-privacy-container .kr-cta-button {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.kr-privacy-container .kr-site-visit {
+  background-color: #d4af37; /* Gold */
+  color: #000000;
+}
+
+.kr-privacy-container .kr-get-details {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.kr-privacy-container .kr-cta-icon {
+  margin-right: 6px;
+}
+
+.kr-privacy-container .kr-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Privacy content styles - using kr- prefix */
+.kr-privacy-container .kr-privacy-content {
+  max-width: 900px;
+  width: 100%;
+  margin: 30px auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.kr-privacy-container h1.kr-privacy-title {
+  color: #000000;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.kr-privacy-container .kr-gold-line {
+  height: 3px;
+  width: 80px;
+  background-color: #d4af37; /* Gold */
+  margin: 10px auto 20px;
+}
+
+.kr-privacy-container h2.kr-section-title {
+  color: #000000;
+  font-size: 1.6rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f3f3f3;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.kr-privacy-container .kr-last-updated {
+  color: #777777;
+  text-align: center;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.kr-privacy-container .kr-section {
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.kr-privacy-container p {
+  margin-bottom: 15px;
+}
+
+.kr-privacy-container ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+  list-style-type: disc;
+}
+
+.kr-privacy-container li {
+  margin-bottom: 10px;
+}
+
+.kr-privacy-container strong {
+  color: #000000;
+  font-weight: 600;
+}
+
+.kr-privacy-container .kr-contact-info {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  border-left: 4px solid #d4af37; /* Gold */
+}
+
+.kr-privacy-container .kr-contact-info p {
+  margin-bottom: 5px;
+}
+
+.kr-privacy-container .kr-agreement {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eeeeee;
+}
+
+.kr-privacy-container .kr-thank-you {
+  font-weight: 600;
+  text-align: center;
+  margin-top: 30px;
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+/* Contact Float Buttons - using kr- prefix */
+.kr-privacy-container .kr-contact-float-buttons {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 99;
+}
+
+.kr-privacy-container .kr-whatsapp-btn, 
+.kr-privacy-container .kr-call-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.kr-privacy-container .kr-whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+}
+
+.kr-privacy-container .kr-call-btn {
+  background-color: #d4af37; /* Gold */
+  color: #000000;
+}
+
+.kr-privacy-container .kr-whatsapp-btn:hover, 
+.kr-privacy-container .kr-call-btn:hover {
+  transform: scale(1.1);
+}
+
+.kr-privacy-container .kr-whatsapp-icon, 
+.kr-privacy-container .kr-call-icon {
+  font-size: 24px;
+}
+
+/* Responsive design - using kr- prefix */
+@media (max-width: 768px) {
+  .kr-privacy-container .kr-privacy-content {
+    padding: 30px 20px;
+    margin: 20px 15px;
+  }
+  
+  .kr-privacy-container h1.kr-privacy-title {
+    font-size: 1.8rem;
+  }
+  
+  .kr-privacy-container h2.kr-section-title {
+    font-size: 1.4rem;
+  }
+  
+  .kr-privacy-container .kr-contact-float-buttons {
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .kr-privacy-container .kr-whatsapp-btn, 
+  .kr-privacy-container .kr-call-btn {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kr-privacy-container .kr-privacy-content {
+    padding: 20px 15px;
+    margin: 15px 10px;
+  }
+  
+  .kr-privacy-container h1.kr-privacy-title {
+    font-size: 1.5rem;
+  }
+  
+  .kr-privacy-container h2.kr-section-title {
+    font-size: 1.3rem;
+  }
+  
+  .kr-privacy-container .kr-cta-container {
+    justify-content: center;
+  }
+  
+  .kr-privacy-container .kr-gold-line {
+    width: 60px;
+  }
+}

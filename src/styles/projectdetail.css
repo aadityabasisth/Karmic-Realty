@@ -1,0 +1,812 @@
+/* Project Detail Page Styles */
+.project-detail-page {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Header Section */
+.project-header {
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0 60px;
+  position: relative;
+}
+
+.header-overlay {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-size: 16px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.back-link:hover {
+  opacity: 1;
+  color: #D4AF37; /* Gold color on hover */
+}
+
+.back-link span {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.project-header h1 {
+  color: #D4AF37; /* Gold color heading */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: white;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.meta-icon {
+  margin-right: 8px;
+  font-size: 18px;
+  color: #D4AF37; /* Gold color icon */
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.status-badge.ready-to-move {
+  background-color: #D4AF37; /* Gold color for ready to move */
+  color: black;
+}
+
+.status-badge.under-construction {
+  background-color: #D4AF37; /* Gold color with opacity for under construction */
+  color: black;
+  opacity: 0.8;
+}
+
+.status-badge.new-launch {
+  background-color: #000; /* Black background with gold border for new launch */
+  color: #D4AF37;
+  border: 1px solid #D4AF37;
+}
+
+/* Navigation Tabs */
+.project-nav {
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-tabs {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tab-btn {
+  padding: 18px 24px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+}
+
+.tab-btn:hover {
+  color: #D4AF37; /* Gold color on hover */
+}
+
+.tab-btn.active {
+  color: #D4AF37; /* Gold color for active tab */
+  border-bottom-color: #D4AF37; /* Gold underline for active tab */
+}
+
+/* Content Sections */
+.project-content {
+  padding: 40px 0;
+  background-color: #fff; /* White background for content */
+}
+
+/* Overview Section */
+.overview-grid {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 30px;
+}
+
+.overview-left h2,
+.overview-left h3 {
+  font-size: 1.8rem;
+  color: #333; /* Updated to match the light background */
+  margin-bottom: 20px;
+}
+
+.overview-left h3 {
+  font-size: 1.4rem;
+}
+
+.project-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555; /* Updated to match the light background */
+  margin-bottom: 30px;
+}
+
+.key-details h3,
+.specifications h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #333; /* Updated to match the light background */
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.detail-box {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  border: 1px solid rgba(212, 175, 55, 0.1); /* Subtle gold border */
+}
+
+.detail-icon {
+  font-size: 24px;
+  margin-right: 15px;
+  color: #D4AF37; /* Gold color icon */
+}
+
+.detail-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-info .detail-label {
+  font-size: 14px;
+  color: #777; /* Updated to match the light background */
+  margin-bottom: 5px;
+}
+
+.detail-info .detail-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  color: #555; /* Updated to match the light background */
+}
+
+.feature-icon {
+  margin-right: 10px;
+  color: #D4AF37; /* Gold color icon */
+  font-weight: bold;
+}
+
+.feature-text {
+  color: #555;
+}
+
+.project-image-main {
+  margin-bottom: 25px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-image-main img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.enquiry-box {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.2); /* Subtle gold border */
+}
+
+.enquiry-box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.maha-rera {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.download-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.download-link {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #eee;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: all 0.3s;
+  text-align: center;
+  border: 1px solid rgba(212, 175, 55, 0.1); /* Very subtle gold border */
+}
+
+.download-link:hover {
+  background-color: #D4AF37; /* Gold background on hover */
+  color: black;
+}
+
+/* Amenities Section */
+.amenities-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.amenity-card {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+  border: 1px solid rgba(212, 175, 55, 0.1); /* Subtle gold border */
+}
+
+.amenity-card:hover {
+  transform: translateY(-5px);
+  border-color: #D4AF37; /* Gold border on hover */
+}
+
+.amenity-icon {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #D4AF37; /* Gold color icon */
+}
+
+.amenity-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.facility-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.facility-image {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.1); /* Very subtle gold border */
+}
+
+.facility-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.facility-image p {
+  padding: 10px;
+  background-color: #f8f8f8;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Configurations Section */
+.configurations-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.config-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.config-card {
+  border: 1px solid rgba(212, 175, 55, 0.2); /* Subtle gold border */
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.config-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.config-header {
+  padding: 15px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.config-header h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+}
+
+.config-price {
+  font-weight: 600;
+  color: #D4AF37; /* Gold color price */
+}
+
+.config-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.config-details {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.config-detail {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.config-detail .detail-label {
+  color: #777;
+}
+
+.config-detail .detail-value {
+  font-weight: 600;
+  color: #333;
+}
+
+.config-actions {
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.view-floor-plan,
+.request-quote {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.view-floor-plan {
+  background-color: #000; /* Black background */
+  color: #D4AF37; /* Gold text */
+  border: 1px solid #D4AF37; /* Gold border */
+}
+
+.view-floor-plan:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.request-quote {
+  background-color: #D4AF37; /* Gold button */
+  color: black;
+}
+
+.request-quote:hover {
+  background-color: #B8960B; /* Darker gold on hover */
+}
+
+.pricing-note {
+  font-size: 14px;
+  color: #777;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  border: 1px solid rgba(212, 175, 55, 0.1); /* Very subtle gold border */
+}
+
+/* Gallery Section */
+.gallery-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery-item {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
+  border: 1px solid rgba(212, 175, 55, 0.1); /* Subtle gold border */
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+  border-color: #D4AF37; /* Gold border on hover */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Location Section */
+.location-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.location-map {
+  margin-bottom: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.2); /* Subtle gold border */
+}
+
+.map-placeholder img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.view-on-map {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  background-color: #f2f2f2;
+  color: #D4AF37; /* Gold color text */
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.view-on-map:hover {
+  background-color: #000; /* Black background on hover */
+  color: #D4AF37; /* Gold text maintained on hover */
+}
+
+.location-advantages h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.advantage-column h4 {
+  font-size: 1.1rem;
+  color: #D4AF37; /* Gold color heading */
+  margin-bottom: 15px;
+}
+
+.advantage-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.advantage-column li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+  font-size: 15px;
+  color: #555;
+}
+
+.advantage-column li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #D4AF37; /* Gold color bullet */
+}
+
+/* Similar Projects Section */
+.similar-projects {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+}
+
+.similar-projects h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.similar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.similar-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  border: 1px solid rgba(212, 175, 55, 0.1); /* Subtle gold border */
+}
+
+.similar-card:hover {
+  transform: translateY(-5px);
+  border-color: #D4AF37; /* Gold border on hover */
+}
+
+.similar-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.similar-info {
+  padding: 20px;
+}
+
+.similar-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.similar-info p {
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.similar-price {
+  display: block;
+  font-weight: 600;
+  color: #D4AF37; /* Gold color price */
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.view-similar {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #D4AF37; /* Gold button */
+  color: black;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.view-similar:hover {
+  background-color: #B8960B; /* Darker gold on hover */
+}
+
+/* Footer CTA Section */
+.project-footer {
+  background-color: #000; /* Black background */
+  padding: 50px 0;
+  color: white;
+}
+
+.footer-cta {
+  text-align: center;
+}
+
+.footer-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #D4AF37; /* Gold color heading */
+}
+
+.footer-cta p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.enquire-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s;
+  background-color: #D4AF37; /* Gold button */
+  color: black;
+}
+
+.enquire-btn:hover {
+  background-color: #B8960B; /* Darker gold on hover */
+}
+
+/* Loading State */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 4px solid #D4AF37; /* Gold spinner */
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Not Found State */
+.not-found {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.not-found h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.not-found p {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #D4AF37; /* Gold button */
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #B8960B; /* Darker gold on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .amenities-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .advantages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-header h1 {
+    font-size: 2rem;
+  }
+  
+  .details-grid,
+  .config-cards,
+  .facility-images,
+  .similar-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .amenities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .feature-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .amenities-grid,
+  .gallery-grid,
+  .advantages-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+  }
+}
