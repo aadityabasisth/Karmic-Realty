@@ -1,9 +1,11 @@
+
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useForm } from "react-hook-form"; // Added this missing import
+import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import "../styles/home.css";
+import { FaCar, FaComments, FaMapMarkerAlt, FaArrowRight, FaArrowLeft, FaQuoteLeft, FaUser, FaSwimmingPool, FaChild, FaDumbbell, FaUtensils, FaBuilding, FaRunning, FaSpa, FaGlassCheers, FaParking, FaGamepad, FaCheckCircle } from "react-icons/fa";
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -100,27 +102,17 @@ const Home = () => {
   ];
 
   const getAmenityIcon = (amenity) => {
-    return amenity.includes("Play") || amenity.includes("Kid")
-      ? "👶"
-      : amenity.includes("Club")
-      ? "🏢"
-      : amenity.includes("Track") || amenity.includes("Jogging")
-      ? "🏃"
-      : amenity.includes("Yoga")
-      ? "🧘"
-      : amenity.includes("Party") || amenity.includes("Hall")
-      ? "🎉"
-      : amenity.includes("Parking")
-      ? "🚗"
-      : amenity.includes("Game")
-      ? "🎮"
-      : amenity.includes("Pool")
-      ? "🏊"
-      : amenity.includes("Gym")
-      ? "🏋️"
-      : amenity.includes("Cafeteria")
-      ? "🍽️"
-      : "✨";
+    if (amenity.includes("Pool")) return <FaSwimmingPool />;
+    if (amenity.includes("Play") || amenity.includes("Kid")) return <FaChild />;
+    if (amenity.includes("Gym")) return <FaDumbbell />;
+    if (amenity.includes("Cafeteria")) return <FaUtensils />;
+    if (amenity.includes("Club")) return <FaBuilding />;
+    if (amenity.includes("Track") || amenity.includes("Jogging")) return <FaRunning />;
+    if (amenity.includes("Yoga")) return <FaSpa />;
+    if (amenity.includes("Party") || amenity.includes("Hall")) return <FaGlassCheers />;
+    if (amenity.includes("Parking")) return <FaParking />;
+    if (amenity.includes("Game")) return <FaGamepad />;
+    return <FaCheckCircle />;
   };
 
  
@@ -130,10 +122,10 @@ const Home = () => {
       <div className="top-cta-bar">
         <div className="cta-container">
           <a href="/book-site-visit" className="cta-button site-visit">
-            <span className="cta-icon">🚗</span> Book Site Visit
+            <span className="cta-icon"><FaCar /></span> Book Site Visit
           </a>
           <a href="/get-details" className="cta-button get-details">
-            <span className="cta-icon">💬</span> Get Details
+            <span className="cta-icon"><FaComments /></span> Get Details
           </a>
         </div>
       </div>
@@ -153,12 +145,12 @@ const Home = () => {
           >
             <div className="carousel-content">
               <span className="location-tag">
-                <span className="location-icon">📍</span> {slide.location}
+                <span className="location-icon"><FaMapMarkerAlt /></span> {slide.location}
               </span>
               <h1 className="main-title">{slide.title}</h1>
               <h2 className="subtitle">{slide.subtitle}</h2>
               <Link to="/projects" className="download-btn">
-                Explore Projects <span className="arrow-icon">➜</span>
+                Explore Projects <span className="arrow-icon"><FaArrowRight /></span>
               </Link>
             </div>
           </div>
@@ -166,10 +158,10 @@ const Home = () => {
 
         {/* Carousel Controls */}
         <button className="carousel-arrow prev" onClick={goToPrevSlide}>
-          <span className="arrow-left">❮</span>
+          <span className="arrow-left"><FaArrowLeft /></span>
         </button>
         <button className="carousel-arrow next" onClick={goToNextSlide}>
-          <span className="arrow-right">❯</span>
+          <span className="arrow-right"><FaArrowRight /></span>
         </button>
 
         <div className="carousel-indicators">
@@ -478,14 +470,14 @@ const Home = () => {
         <div className="testimonial-slider">
           <div className="testimonial-card">
             <div className="testimonial-content">
-              <div className="quote-icon">❝</div>
+              <div className="quote-icon"><FaQuoteLeft /></div>
               <p>
                 We had a wonderful experience with Karmic Realty. Their team
                 guided us through the entire process and helped us find our
                 dream home. The quality of construction is excellent.
               </p>
               <div className="testimonial-author">
-                <div className="author-avatar">👤</div>
+                <div className="author-avatar"><FaUser /></div>
                 <div className="author-info">
                   <h4>Rohit Sharma</h4>
                   <h6>Homeowner at AR Atlas</h6>

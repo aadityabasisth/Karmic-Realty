@@ -1,5 +1,9 @@
+
 import React from "react";
 import "../styles/aboutus.css";
+
+import KarmicLogo from "../assets/Karmic.jpg";
+import { FaHome, FaPhone, FaEye, FaBullseye, FaGem, FaHandshake, FaSeedling, FaRecycle, FaMountain, FaHome as FaHome2, FaBuilding, FaCrown, FaCheckCircle, FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 
 const AboutUs = () => {
   return (
@@ -8,11 +12,11 @@ const AboutUs = () => {
       <div className="top-cta-bar">
         <div className="cta-container">
           <a href="#book-visit" className="cta-button site-visit">
-            <span className="cta-icon">🏠</span>
+            <span className="cta-icon"><FaHome /></span>
             Book Site Visit
           </a>
           <a href="#contact" className="cta-button get-details">
-            <span className="cta-icon">📞</span>
+            <span className="cta-icon"><FaPhone /></span>
             Get Details
           </a>
         </div>
@@ -49,7 +53,7 @@ const AboutUs = () => {
             </p>
           </div>
           <div className="story-image">
-            <img src="/api/placeholder/500/400" alt="Karmic Realty team" />
+            <img src={KarmicLogo} alt="Karmic Realty team" style={{maxWidth: '100%', borderRadius: '12px', boxShadow: '0 4px 24px rgba(0,0,0,0.08)'}} />
           </div>
         </div>
       </section>
@@ -58,7 +62,7 @@ const AboutUs = () => {
       <section className="vision-mission-section">
         <div className="vm-container">
           <div className="vm-card vision-card">
-            <div className="vm-icon">👁️</div>
+            <div className="vm-icon"><FaEye /></div>
             <h3>Our Vision</h3>
             <p>
               To become a trustworthy brand and empower our clients with expert
@@ -67,7 +71,7 @@ const AboutUs = () => {
             </p>
           </div>
           <div className="vm-card mission-card">
-            <div className="vm-icon">🎯</div>
+            <div className="vm-icon"><FaBullseye /></div>
             <h3>Our Mission</h3>
             <p>
               Our mission is to provide personalized attention, expert
@@ -87,7 +91,7 @@ const AboutUs = () => {
           <div className="gold-line"></div>
           <div className="values-grid">
             <div className="value-card">
-              <div className="value-icon">💎</div>
+              <div className="value-icon"><FaGem /></div>
               <h3>Excellence</h3>
               <p>
                 We pursue excellence in every transaction, ensuring our clients
@@ -95,7 +99,7 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="value-card">
-              <div className="value-icon">🤝</div>
+              <div className="value-icon"><FaHandshake /></div>
               <h3>Integrity</h3>
               <p>
                 We operate with complete transparency and ethical practices,
@@ -103,7 +107,7 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="value-card">
-              <div className="value-icon">🌱</div>
+              <div className="value-icon"><FaSeedling /></div>
               <h3>Client-Centered</h3>
               <p>
                 We prioritize our clients' needs and goals, tailoring our
@@ -112,7 +116,7 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="value-card">
-              <div className="value-icon">♻️</div>
+              <div className="value-icon"><FaRecycle /></div>
               <h3>Community Focus</h3>
               <p>
                 We believe in contributing to the communities we serve, helping
@@ -130,7 +134,7 @@ const AboutUs = () => {
           <div className="gold-line"></div>
           <div className="services-grid">
             <div className="service-card">
-              <div className="service-icon">🏞️</div>
+              <div className="service-icon"><FaMountain /></div>
               <h3>NA & Agricultural Land</h3>
               <p>
                 Specialized guidance for Non-Agricultural and Agricultural land
@@ -139,7 +143,7 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="service-card">
-              <div className="service-icon">🏘️</div>
+              <div className="service-icon"><FaHome2 /></div>
               <h3>Residential Properties</h3>
               <p>
                 Expert assistance in finding your dream home or selling your
@@ -147,7 +151,7 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="service-card">
-              <div className="service-icon">🏢</div>
+              <div className="service-icon"><FaBuilding /></div>
               <h3>Commercial Properties</h3>
               <p>
                 Strategic solutions for businesses seeking office spaces, retail
@@ -156,7 +160,7 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="service-card">
-              <div className="service-icon">👑</div>
+              <div className="service-icon"><FaCrown /></div>
               <h3>Luxury Properties</h3>
               <p>
                 Exclusive access to premium properties featuring upscale
@@ -174,7 +178,7 @@ const AboutUs = () => {
           <div className="gold-line"></div>
           <div className="choose-grid">
             <div className="choose-item">
-              <div className="choose-icon">✓</div>
+              <div className="choose-icon"><FaCheckCircle /></div>
               <div className="choose-content">
                 <h3>Local Market Expertise</h3>
                 <p>
@@ -458,10 +462,10 @@ const AboutUs = () => {
       {/* Contact Float Buttons */}
       {/* <div className="contact-float-buttons">
         <a href="https://wa.me/1234567890" className="whatsapp-btn">
-          <span className="whatsapp-icon">📱</span>
+          <span className="whatsapp-icon"><FaWhatsapp /></span>
         </a>
         <a href="tel:+1234567890" className="call-btn">
-          <span className="call-icon">📞</span>
+          <span className="call-icon"><FaPhoneAlt /></span>
         </a>
       </div> */}
     </div>

@@ -56,6 +56,26 @@ body,
 
 .cta-icon {
   margin-right: 8px;
+  color: #d4af37;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+}
+
+.location-icon {
+  color: #d4af37;
+  font-size: 1.2em;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.arrow-icon {
+  color: #d4af37;
+  font-size: 1.2em;
+  margin-left: 6px;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
 }
 
 /* Hero Section */
@@ -942,7 +962,8 @@ textarea.form-input {
 
 .quote-icon {
   font-size: 60px;
-  color: rgba(212, 175, 55, 0.2);
+  color: #d4af37;
+  opacity: 0.18;
   position: absolute;
   top: -40px;
   left: -20px;
@@ -964,14 +985,24 @@ textarea.form-input {
 }
 
 .author-avatar {
- padding: 10px;
+  padding: 10px;
   border-radius: 50%;
-  background-color: #f0f0f0;
+  background-color: #fffbe6;
+  border: 2px solid #d4af37;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: 28px;
+  color: #d4af37;
   margin-right: 15px;
+}
+.amenity-icon {
+  color: #d4af37;
+  font-size: 2em;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .author-info h4 {
