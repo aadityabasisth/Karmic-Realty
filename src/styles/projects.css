@@ -1,3 +1,120 @@
+/* Load More Button Styles */
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 40px 0;
+}
+
+.load-more-btn {
+  min-width: 220px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 14px 0;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.08);
+  background: linear-gradient(90deg, #d4af37 0%, #bfa14a 100%);
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+}
+.load-more-btn:hover, .load-more-btn:focus {
+  background: linear-gradient(90deg, #bfa14a 0%, #d4af37 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.18);
+}
+/* CTA Section Styles */
+.cta-section {
+  position: relative;
+  background: linear-gradient(90deg, #fffbe6 0%, #f9f6ef 100%);
+  padding: 60px 0 50px 0;
+  margin-top: 40px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(212, 175, 55, 0.07);
+  overflow: hidden;
+}
+.cta-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(212,175,55,0.08) 0%, rgba(255,255,255,0.0) 100%);
+  z-index: 1;
+}
+.cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.cta-content h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #d4af37;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+.cta-content p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 28px;
+  font-weight: 400;
+}
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+.cta-primary-btn {
+  background: linear-gradient(90deg, #d4af37 0%, #bfa14a 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 36px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.cta-primary-btn:hover, .cta-primary-btn:focus {
+  background: linear-gradient(90deg, #bfa14a 0%, #d4af37 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.18);
+}
+.view-details-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.gold-btn {
+  background: linear-gradient(90deg, #d4af37 0%, #bfa14a 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.gold-btn:hover, .gold-btn:focus {
+  background: linear-gradient(90deg, #bfa14a 0%, #d4af37 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.18);
+}
 /* Projects Page Styles - Fixed version */
 .projects-page {
   width: 100%;

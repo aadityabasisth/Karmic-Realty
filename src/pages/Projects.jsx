@@ -608,12 +608,14 @@ const Projects = () => {
                   </div>
                 </div>
                 <div className="card-footer">
-                  <Link
-                    to={`/project/${project.id}`}
-                    className="view-details-btn"
-                  >
-                    View Details
-                  </Link>
+                  <div className="view-details-btn-wrapper">
+                    <Link
+                      to={`/project/${project.id}`}
+                      className="view-details-btn gold-btn"
+                    >
+                      View Details
+                    </Link>
+                  </div>
                   <Link
                     to="/contact"
                     className="inquiry-btn"
@@ -648,8 +650,8 @@ const Projects = () => {
 
         {displayedProjects.length < filteredProjects.length && (
           <div className="load-more-container">
-            <button className="load-more-btn" onClick={loadMore}>
-              Load More Properties
+            <button className="load-more-btn gold-btn" onClick={loadMore}>
+              View More Properties
             </button>
           </div>
         )}
